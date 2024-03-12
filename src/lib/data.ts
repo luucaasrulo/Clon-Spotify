@@ -318,4 +318,49 @@ export const songs: Song[] = [
     "album": "Chill Lo-Fi Music",
     "duration": "4:20"
   },
+  {
+    "id": 1,
+    "albumId": 6,
+    "title": "Moonlit Walk",
+    "image": "https://f4.bcbits.com/img/a0363730459_16.jpg",
+    "artists": ["LoFi Dreamer"],
+    "album": "Like a Necessity",
+    "duration": "3:12"
+  },
+  {
+    "id": 2,
+    "albumId": 6,
+    "title": "Coffee Daze",
+    "image": "https://f4.bcbits.com/img/a0363730459_16.jpg",
+    "artists": ["LoFi Dreamer"],
+    "album": "Like a Necessity",
+    "duration": "4:07"
+  },
+  {
+    "id": 3,
+    "albumId": 6,
+    "title": "Skyline Serenade",
+    "image": "https://f4.bcbits.com/img/a0363730459_16.jpg",
+    "artists": ["LoFi Dreamer"],
+    "album": "Like a Necessity",
+    "duration": "3:50"
+  },
+  {
+    "id": 4,
+    "albumId": 6,
+    "title": "Urban Echoes",
+    "image": "https://f4.bcbits.com/img/a0363730459_16.jpg",
+    "artists": ["LoFi Dreamer"],
+    "album": "Like a Necessity",
+    "duration": "3:30"
+  },
+  {
+    "id": 5,
+    "albumId": 6,
+    "title": "Night's End",
+    "image": "https://f4.bcbits.com/img/a0363730459_16.jpg",
+    "artists": ["LoFi Dreamer"],
+    "album": "Like a Necessity",
+    "duration": "4:20"
+  },
 ]

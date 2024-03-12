@@ -115,7 +115,7 @@ const VolumeControl = () => {
       </button>
     
       <Slider
-        defaultValue={[100]}
+        defaultValue={[75]}
         max={100}
         min={0}
         value={[volume * 100]}
@@ -145,7 +145,7 @@ export function Player () {
   }, [volume])
 
   useEffect(() => {
-    const { song, playlist, songs } = currentMusic
+    const { song, playlist} = currentMusic
     if (song) {
       const src = `/music/${playlist?.id}/0${song.id}.mp3`
       audioRef.current.src = src

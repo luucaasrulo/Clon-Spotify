@@ -1,33 +1,29 @@
 ---
 import MusicsTable from "../../components/MusicsTable.astro"
+import Layout from "../../layouts/Layout.astro"
 import { CardPlayButton } from "../../components/CardPlayButton"
-import Layout from "../../layouts/Layout.astro";
-import { allPlaylists, songs } from "../../lib/data";
+import { allPlaylists, songs } from "../../lib/data"
 
-const { id } = Astro.params;
+const { id } = Astro.params
 
-const playlist = allPlaylists.find((playlist) => playlist.id === id);
-const playListSongs = songs.filter(
-  (song) => song.albumId === playlist?.albumId,
-);
+const playlist = allPlaylists.find((playlist) => playlist.id === id)
+const playListSongs = songs.filter((song) => song.albumId === playlist?.albumId)
 ---
 
 <Layout title="Spotify Clone">
   <div
     id="playlist-container"
-    class="relative flex flex-col h-full overflow-x-hidden"
+    class="relative flex flex-col bg-[rgba(252,252,252,0.08)] overflow-x-hidden"
     transition:name=`playlist ${id} box`
-    style="
-    background: #121212;
-
-    "
   >
+    <!-- <PageHeader /> -->
+
     <header class="flex flex-row gap-8 px-6 mt-12">
-      <picture class="aspect-square w-[232px] h-[232px] flex-none">
+      <picture class="aspect-square w-52 h-52 flex-none">
         <img
           src={playlist?.cover}
           alt={`Cover of ${playlist?.title}`}
-          class="object-cover w-full h-full rounded-md shadow-lg"
+          class="object-cover w-full h-full shadow-lg"
           transition:name=`playlist ${playlist?.id} image`
         />
       </picture>
@@ -48,7 +44,7 @@ const playListSongs = songs.filter(
             </div>
             <p class="mt-1">
               <span class="text-white">{playListSongs.length} canciones</span>,
-              3 min aproximadamente
+              30 min aproximadamente
             </p>
           </div>
         </div>
@@ -62,13 +58,12 @@ const playListSongs = songs.filter(
     <div class="relative z-10 px-6 pt-10"></div>
 
     <div
-      class="absolute inset-0 bg-gradient-to-t from-zinc-900 via-zinc-900/80 -z-[1]"
+      class="absolute inset-0 bg-gradient-to-t from-[rgb(12,12,12)] via-[rgb(12,12,12)] -z-[1]"
     >
     </div>
 
-    <section class="p-6">
+    <section class=" p-6">
       <MusicsTable songs={playListSongs} />
     </section>
   </div>
-  <style></style>
 </Layout>

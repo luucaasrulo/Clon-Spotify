@@ -13,18 +13,19 @@ const artistsString = artists.join(", ");
 ---
 
 <article
-  class="relative hover:bg-zinc-600/30 shadow-lg hover:shadow-xl bg-zinc-900/50 rounded-md ransi transition-all duration-300"
+  class="group relative hover:bg-zinc-800 shadow-lg hover:shadow-xl bg-zinc-900/10 rounded-md ransi transition-all duration-300"
 >
   <div
-    class=`absolute right-4 botton-20 traslate-y-4
-  transition-all duration-500 opacity-0`
+    class=`absolute right-4 bottom-20 translate-y-4
+    transition-all duration-500 opacity-0
+    group-hover:translate-y-0 group-hover:opacity-100
+    z-10`
   >
     <CardPlayButton id={id} client:visible />
   </div>
   <a
     href={`/playlist/${id}`}
-    class="playlist-item flex transition-all duration-300
-  relative p-3 overflow-hidden gap-2 pb-5 rounded-md w-[182px] h-[277] flex-col"
+    class="playlist-item transition-all duration-300 flex relative p-2 overflow-hidden gap-2 pb-6 rounded-md w-44 flex-col"
     transition:name=`playlist ${id} box`
   >
     <picture class="aspect-square w-full h-auto flex-none">

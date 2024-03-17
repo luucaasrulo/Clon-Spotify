@@ -6,12 +6,12 @@ export const PlayerCurrentSong = ({image, title, artists}) => {
         overflow-hidden
       `}>
       { image &&
-      (<picture className="w-16 h-16 bg-zinc-800 rounded-md shadow-lg overflow-hidden">
+      (<picture className="aspect-square w-11 bg-zinc-800 rounded-t-[7%] shadow-lg overflow-hidden">
         <img src={image} alt={title}/>
       </picture>)
       }
       <div className="flex flex-col">
-        <h3 className="font-semibold text-sm block">
+        <h3 className="font-semibold text-sm">
           {title}
         </h3>
         <span className="text-xs opacity-80">

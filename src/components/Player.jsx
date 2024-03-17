@@ -44,12 +44,13 @@ export function Player() {
     }
   }
 
-  return (<div className="flex flex-row justify-between w-full px-1 z-50">
-      <div className="w-[200px]">
+  return (
+  <div className="flex flex-row justify-between w-full px-1 align-baseline ">
+      <div className="w-[600px]">
         <PlayerCurrentSong {...currentMusic.song} />
       </div>
 
-      <div className="grid place-content-center gap-4 flex-1">
+      <div className=" place-content-center flex-1 w-[700px]">
         <div className="flex justify-center flex-col items-center">
           <PlayerControlButtonBar/>
           <PlayerSoundControl audio={audioRef}/>
@@ -59,8 +60,8 @@ export function Player() {
         </div>
       </div>
 
-      <div className="grid place-content-center">
+      <div className="grid  w-[600px]">
         <PlayerVolumeControl/>
       </div>
-    </div>)
+  </div>)
 }

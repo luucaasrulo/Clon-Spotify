@@ -48,13 +48,13 @@ const formattedDuration = formatDuration(totalDurationInSeconds)
 <Layout title="Spotify Clone">
   <div
     id="playlist-container"
-    class="relative flex flex-col h-full bg-[rgba(179,179,179,0.2)] overflow-x-hidden bg-gradient-to-t from-20% from-[rgb(12,12,12)] via-[rgba(12,12,12,0.5)]"
+    class="relative rounded-lg flex flex-col h-full bg-[rgba(179,179,179,0.2)] overflow-x-hidden bg-gradient-to-t from-20% from-[rgb(12,12,12)] via-[rgba(12,12,12,0.5)]"
     style={`background-color: ${playlist?.color.accent}`}
     transition:name=`playlist ${id} box`
   >
     <PageHeader />
 
-    <header class="flex flex-row gap-5 p-[24px] mt-12 ">
+    <header class="flex flex-row gap-5 p-[24px]">
       <picture class="aspect-square w-[232px] h-[232px] flex-none ">
         <img
           src={playlist?.cover}

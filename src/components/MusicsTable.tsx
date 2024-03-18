@@ -34,7 +34,7 @@ export const MusicsTable = ({songs}: Props) => {
             return (
               <tr
                 key={`{song.albumId}-${song.id}`} className="text-gray-300 border-spacing-0 text-sm font-light hover:bg-white/10 overflow-hidden transition duration-300 group">
-                <td className="relative px-4 py-2 rounded-tl-lg rounded-bl-lg w-5">
+                <td className="relative px-4 py-2 rounded-tl-sm rounded-bl-sm w-5">
                   <span className="text-base absolute top-3 opacity-100 transition-all group-hover:opacity-0">{index + 1}</span>
                   <div className="absolute text-base top-3 opacity-0 transition-all group-hover:opacity-100">
                     <MusicsTablePlay song={song} isCurrentSong={isCurrentSongBoolean}/>
@@ -42,7 +42,7 @@ export const MusicsTable = ({songs}: Props) => {
                 </td>
                 <td className=" py-[2px] flex gap-2">
                   <picture className=" mt-1">
-                    <img src={song.image} alt={song.title} className="rounded-[10%] w-[40px] h-[40px]"/>
+                    <img src={song.image} alt={song.title} className="rounded-[5%] w-[40px] h-[40px]"/>
                   </picture>
                   <div className="flex flex-col">
                     <h3 className={
@@ -54,7 +54,7 @@ export const MusicsTable = ({songs}: Props) => {
                   </div>
                 </td>
                 <td className="px-4 py-2">{song.album}</td>
-                <td className="px-4 py-2 rounded-tr-lg rounded-br-lg">{song.duration}</td>
+                <td className="px-4 py-2 rounded-tr-sm rounded-br-sm">{song.duration}</td>
               </tr>
             )
           }

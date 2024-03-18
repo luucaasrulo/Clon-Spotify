@@ -3,6 +3,7 @@ import Layout from "../layouts/Layout.astro"
 import PlayListItemCard from "@/components/PlayListItemCard.astro"
 import { playlists } from "@/lib/data"
 import Greeting from "@/components/Greeting.svelte"
+import PageHeader from "@/components/PageHeader.astro"
 ---
 
 <Layout title="Spotify Clone">
@@ -10,7 +11,7 @@ import Greeting from "@/components/Greeting.svelte"
     id="playlist-container"
     class="relative transition-all duration-1000 h-full bg-[rgba(179,179,179,0.2)] overflow-x-hidden bg-gradient-to-t from-50% from-[rgb(12,12,12)] via-[rgba(12,12,12,0.8)]"
   >
-    <!-- <PageHeader /> -->
+    <PageHeader />
 
     <div class="relative z-10 px-6 pt-10">
       <Greeting />

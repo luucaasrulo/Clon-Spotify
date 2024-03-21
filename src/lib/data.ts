@@ -1,7 +1,7 @@
 import { colors } from "./colors";
 
 export interface Playlist {
-  id: number;
+  id: string;
   albumId: number;
   title: string;
   color: (typeof colors)[keyof typeof colors];
@@ -11,7 +11,7 @@ export interface Playlist {
 
 export const playlists: Playlist[] = [
   {
-    id: 1,
+    id: "1",
     albumId: 1,
     title: "Rock Nacional",
     color: colors.blue,
@@ -20,7 +20,7 @@ export const playlists: Playlist[] = [
     artists: ["Soda Sterio", "Attaque 77", "Airbag", "Los Piojos", "Mancha de Rolando"],
   },
   {
-    id: 2,
+    id: "2",
     albumId: 2,
     title: "BZRP Music Sessions",
     color: colors.teal,
@@ -29,7 +29,7 @@ export const playlists: Playlist[] = [
     artists: ["BZRP", "Dani Ribbas", "John C", "Kiddo Toto", "Chucky73", "L-Gante"],
   },
   {
-    id: 3,
+    id: "3",
     albumId: 3,
     title: "Music for Training",
     color: colors.orange,
@@ -38,7 +38,7 @@ export const playlists: Playlist[] = [
     artists: ["DJ FLG - Manlikefdot", "UNIVXRSE - 0UCHYY", "DJ AG O GRINGO", "$werve - Crazy Mano", "LXNGVX, DJ FKU"],
   },
   {
-    id: 4,
+    id: "4",
     albumId: 4,
     title: "Blue Note Study Time",
     color: colors.blue,
@@ -47,7 +47,7 @@ export const playlists: Playlist[] = [
     artists: ["Raimu", "Yasumu"],
   },
   {
-    id: 5,
+    id: "5",
     albumId: 5,
     title: "Chau Saura Session",
     color: colors.purple,
@@ -56,7 +56,7 @@ export const playlists: Playlist[] = [
     artists: ["Chau Saura", "amies", "kyu"],
   },
   {
-    id: 6,
+    id: "6",
     albumId: 6,
     title: "Like a Necessity",
     color: colors.orange,

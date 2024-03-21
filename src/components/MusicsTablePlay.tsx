@@ -10,7 +10,7 @@ interface Props {
 
 
 const isNewSongOfAnotherPlaylist = (currentMusic: CurrentMusic, song: Song) => {
-  return currentMusic.playlist?.id != song.albumId
+  return currentMusic.playlist?.id != (song.albumId).toString()
 }
 
 
